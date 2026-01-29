@@ -1,10 +1,11 @@
 # Mouse Mover
 
-A simple, lightweight application that prevents your computer from going to sleep by periodically simulating minute mouse movements.
+A simple, lightweight application that prevents your computer from going to sleep or being flagged as afk by periodically simulating minute mouse movements.
 
 ## Features
 
 - **Prevent Sleep:** Keeps your system awake.
+- **Counters Datadog/Work Afk Detection Systems:** Prevents from being flagged as afk.
 - **Subtle Movement:** Jiggles the mouse cursor slightly every 10-60 seconds.
 - **System Tray / Menu Bar:** Unobtrusive icon with Start/Stop controls.
 - **Lightweight:** Minimal resource usage.
