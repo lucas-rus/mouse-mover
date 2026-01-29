@@ -23,20 +23,23 @@ clang++ -framework Cocoa -framework IOKit -framework ApplicationServices -std=c+
 
 ## Windows
 
+### Usage
+Simply run `MouseMover.exe` (included in the repository).
+
 ### Requirements
 - Windows 7, 8, 10, or 11.
 
 ### Building (Windows)
-You can build this using Visual Studio (MSVC) or MinGW.
+If you want to build from source, you can use Visual Studio (MSVC) or MinGW.
 
 **Using MSVC (Visual Studio Developer Command Prompt):**
 ```cmd
-cl /EHsc windows/main.cpp windows/Jiggler.cpp /link user32.lib kernel32.lib shell32.lib
+cl /EHsc /DUNICODE /D_UNICODE windows/main.cpp windows/Jiggler.cpp /link user32.lib kernel32.lib shell32.lib
 ```
 
 **Using MinGW (g++):**
 ```bash
-g++ windows/main.cpp windows/Jiggler.cpp -o MouseMover.exe -static -mwindows
+g++ -DUNICODE -D_UNICODE -municode windows/main.cpp windows/Jiggler.cpp -o MouseMover.exe -static -mwindows
 ```
 
 ## License

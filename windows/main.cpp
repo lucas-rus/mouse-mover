@@ -102,7 +102,7 @@ void InitTrayIcon(HWND hwnd) {
     nid.uFlags = NIF_ICON | NIF_MESSAGE | NIF_TIP;
     nid.uCallbackMessage = WM_TRAYICON;
     nid.hIcon = LoadIcon(NULL, IDI_APPLICATION); // Default application icon
-    wcscpy_s(nid.szTip, L"Mouse Mover");
+    lstrcpyW(nid.szTip, L"Mouse Mover");
     
     Shell_NotifyIcon(NIM_ADD, &nid);
 }
