@@ -1,0 +1,7 @@
+.DS_Store
+*.o
+*.app
+build/
+.vscode/
+cmake-build-debug/
+*.xcuserstate
